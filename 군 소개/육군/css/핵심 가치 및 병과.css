@@ -1,0 +1,231 @@
+/* kmong css 수정 부분 */
+.down-header li{
+  position: relative !important;
+}
+.down-header li ul,
+.down-header li li{
+  width: 100% !important;
+}
+.down-header li ul ul{ 
+  left: 100%;
+  top: 0%;
+}
+.down-header li ul ul a:hover{
+  background: rgb(134, 107, 107) !important;
+}
+
+*{
+  margin:0; /* 브라우저 기본 마진 리셋 */
+  padding:0;  /* 브라우저 기본 패딩 리셋 */
+  box-sizing: border-box;  /*  테두리까지 포함해서 박스 모델 너비로 계산 */
+  text-decoration: none;
+}
+
+a:visited { color: black; text-decoration: none;}
+
+a:link { color: black; text-decoration: none;} 
+
+body {
+  font-family: "맑은 고딕";
+  font-size: 12px;
+ }
+
+#container {
+  width:1200px;   /*  내용 전체의 너비 */
+  margin:20px auto;  /* 내용을 화면 가운데 배치하도록 좌우 마진을 auto로 */
+}
+
+#header {
+  width:100%;  /* 부모 요소의 너비와 똑같게 */
+  height:60px; /* 헤더의 높이 */
+  background-color:#ffffff;
+  text-decoration: none;
+}
+
+.up-header {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.up-header h1 {
+  float: left;
+}
+
+.up-header a { /* 마이페이지 */
+  font-family:'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+#navbar {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar a {
+  color: rgb(0, 0, 0);
+  padding: 0 15px;
+  display: block;
+  text-decoration: none;
+}
+
+#navbar2 {
+  float: right;  
+  text-decoration: none;
+}
+
+.down-header {
+  width: 1200px;
+  height: 50px;
+  background-color: rgb(23,89,149);
+}
+
+.down-header a { /* 커뮤니티 바*/
+  /* font-family:"궁서체"; */
+  font-weight:normal;
+  margin-top:15px;
+  font-size: 16px;
+}
+
+.down-header{
+  border:none;
+  border:0px;
+  margin:0px;
+  padding:0px;
+  font: "sans-serif";
+  font-size:15px;
+  }
+  
+  .down-header ul{ /* Home, main01, main02 오른쪽 부분 */
+  background: rgb(23,89,149);
+  height:50px;
+  list-style:none;
+  margin:0;
+  padding:0;
+  }
+  
+  .down-header li{ /* Home, main01, main02 각 영역 padding 값을 다르게 하면 각 부분이 상자처럼 됨*/
+  float:left;
+  padding:0px;
+  }
+  
+  .down-header li a{ /* Home, main01, main02 각 영역 */
+  background: rgb(23,89,149);
+  color:#fff;
+  display:block;
+  line-height:50px;
+  margin:0px;
+  padding:0px 60px;
+  text-align:center;
+  text-decoration:none;
+  }
+  
+  .down-header li a:hover, .down-header ul li:hover a{ /* Home, main01, main02에 마우스 올렸을 때 각 영역 */
+    background: rgb(99, 99, 105);
+    color:#FFFFFF;
+    text-decoration:none;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .down-header li ul{ /* Home, main01, main02의 하위 메뉴 */
+  background: red;
+  display:none; 
+  /* display: block; */
+  height:auto;
+  border:0px;
+  position:absolute;
+  width:200px;
+  z-index:200;
+  }
+
+  
+  .down-header li:hover ul{ /* Home, main01, main02의 하위 메뉴 */
+  /* display:block; */
+  }
+  
+  .down-header li li { /* Home, main01, main02 오른쪽 부분 */
+  background: red;
+  display:block;
+  float:none;
+  margin:0px;
+  padding:0px;
+  width:200px;
+  }
+  
+  .down-header li:hover li a{ /*  */
+  /* background:none; */
+  }
+  
+  .down-header li ul a{ /* Home, main01, main02의 하위 링크 */
+  display:block;
+  height:80px;
+  font-size:14px;
+  margin:0px;
+  padding:0px 10px 0px 15px;
+  text-align:left;
+  }
+  
+  .down-header li ul a:hover, .down-header li ul li:hover a{ /* Home, main01, main02 하위 메뉴에 마우스 올렸을 때 */
+  background: rgb(171,171,171);
+  border:0px;
+  color:#ffffff;
+  text-decoration:none;
+  }
+  
+  .down-header p{ /* Home, main01, main02 오른쪽 부분 */
+  clear:left;
+}
+
+#left-sidebar {
+  width: 200px;  /* 사이드바의 너비  */
+  height:600px; /* 사이드바의 높이 */
+  background-color: rgb(23,89,149);
+  float: left;  /* 왼쪽으로 플로팅 */
+  margin-top: 50px;
+  text-align: center;
+  font-size:15px;
+}
+
+#leftbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;  
+}
+
+#leftbar li {
+  list-style: none;
+  padding: 50px 0px 0px 0px;
+}
+
+#leftbar h1 {
+  font: 60px;
+  font-weight: bold;
+}
+
+#contents {
+  width: 950px; /* 본문의 너비 */
+  height:950px;  /* 본문의 높이 */
+  background-color:#ffffff;
+  float: left;   /* 왼쪽으로 플로팅 */
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+#footer {
+  width: 1200px;; /* 부모 요소의 너비와 똑같게 */
+  height:30px;  /* 푸터의 높이 */
+  background-color:#ffffff;
+  margin-left: 400px;
+}
+
+#footer li {
+  list-style: none;
+  float: left;
+}
